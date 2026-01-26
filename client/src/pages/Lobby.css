@@ -1,0 +1,136 @@
+.lobby-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.lobby-card {
+  background: white;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  width: 100%;
+}
+
+.lobby-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.lobby-header h1 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.room-code-display {
+  font-size: 48px;
+  font-weight: 700;
+  letter-spacing: 8px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 10px;
+}
+
+.lobby-subtitle {
+  color: #666;
+  font-size: 14px;
+}
+
+.lobby-content {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.game-info {
+  text-align: center;
+  padding: 20px;
+  background: #f5f5ff;
+  border-radius: 12px;
+}
+
+.game-info h2 {
+  font-size: 20px;
+  margin-bottom: 8px;
+  color: #667eea;
+}
+
+.game-info p {
+  color: #666;
+  font-size: 14px;
+}
+
+.players-list {
+  background: #f9f9f9;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.players-list h3 {
+  font-size: 16px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.player-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  background: white;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+
+.player-item:last-child {
+  margin-bottom: 0;
+}
+
+.player-name {
+  font-weight: 500;
+  color: #333;
+}
+
+.host-badge {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.no-players {
+  text-align: center;
+  color: #999;
+  font-style: italic;
+}
+
+.lobby-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.info-message {
+  text-align: center;
+  color: #f39c12;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.primary-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.primary-button:disabled:hover {
+  transform: none;
+  box-shadow: none;
+}

@@ -1,0 +1,96 @@
+.card-display {
+  position: relative;
+  background: white;
+  border: 3px solid #333;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-medium {
+  width: 120px;
+  height: 120px;
+}
+
+.card-small {
+  width: 80px;
+  height: 80px;
+}
+
+.card-large {
+  width: 150px;
+  height: 150px;
+}
+
+.card-display.interactive {
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.card-display.interactive:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card-display.selected {
+  border-color: #667eea;
+  background: #f5f5ff;
+  box-shadow: 0 0 0 3px #667eea;
+}
+
+.card-center {
+  width: 30px;
+  height: 30px;
+  background: #f0f0f0;
+  border: 2px solid #333;
+  border-radius: 50%;
+}
+
+.keyword {
+  position: absolute;
+  font-size: 12px;
+  font-weight: 600;
+  color: #333;
+  background: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  white-space: nowrap;
+  max-width: 80%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card-large .keyword {
+  font-size: 14px;
+  padding: 6px 10px;
+}
+
+.card-small .keyword {
+  font-size: 10px;
+  padding: 2px 4px;
+}
+
+.keyword-top {
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.keyword-right {
+  right: -12px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.keyword-bottom {
+  bottom: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.keyword-left {
+  left: -12px;
+  top: 50%;
+  transform: translateY(-50%);
+}
